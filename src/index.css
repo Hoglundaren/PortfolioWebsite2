@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes roll-vertical {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.rolling-element-vertical {
+  display: block;
+  animation: roll-vertical 20s linear infinite;
+  /* Adjusted duration */
+}
+
+.bg-back {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 22 36 / var(--tw-bg-opacity));
+}
