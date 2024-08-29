@@ -5,14 +5,13 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
-      boxShadow: {
-        '3xl': '0 35px 60px -15px rgb(1, 4, 2)'
-      },
       colors: {
         "bakgrund": "rgb(15 22 36 / var(--tw-bg-opacity))",
+      },
+      backgroundImage: {
+        'main-gradient': 'linear-gradient(to right, #6366f1 10%, #0ea5e9 30%, #10b981 90%)',
       }
     },
   },
-  plugins: [],
 }
 

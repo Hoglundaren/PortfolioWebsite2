@@ -26,3 +26,7 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(15 22 36 / var(--tw-bg-opacity));
 }
+
+body {
+  overflow-y: hidden;
+}
