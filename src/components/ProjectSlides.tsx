@@ -18,7 +18,7 @@ const settings = {
     transitionDuration: 500
 }
 
-const SlideArrows = () => {
+const ProjectSlides = () => {
     return (
         <Slide {...settings} >
             <div>
@@ -43,4 +43,4 @@ const SlideArrows = () => {
     );
 };
 
-export default SlideArrows;
+export default ProjectSlides;

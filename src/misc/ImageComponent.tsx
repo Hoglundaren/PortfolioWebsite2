@@ -1,4 +1,4 @@
-import bild from 'C:/Users/sgb866/Interntid/portfoliowebsite/src/images/closetransp.png'
+import bild from 'C:/Users/sgb866/Interntid/portfoliowebsite2/src/images/transmelon.png'
 
 const ImageComponent = () => {
     return (
