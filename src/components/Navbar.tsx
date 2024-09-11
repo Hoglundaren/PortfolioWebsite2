@@ -6,7 +6,6 @@ import ViewSwitcher from './ViewSwitcher';
 const Navbar = () => {
 
   const [view, setView] = useState("about");
-  const views = ["about", "projects", "skills", "contact"]
   const [isDarkMode, setIsDarkMode] = useState(true)
 
   function handleDarModeToggle(isDarkModeProp: boolean) {
@@ -20,7 +19,10 @@ const Navbar = () => {
         <div className=" relative">
           <div className="hover:animate-pulse absolute left-10 top-1 text-3xl font-bold text-black 
           dark:text-transparent bg-clip-text bg-main-gradient">
-            {isDarkMode ? "Andreas Höglund" : "Höglund Andreas"}
+            {isDarkMode ?
+              (<>Andreas <br /> Höglund</>)
+              :
+              (<>Höglund < br /> Andreas</>)}
           </div>
           <div className='absolute right-10 top-7'>
             <DarkModeToggle isDarkModeProp={handleDarModeToggle} />
