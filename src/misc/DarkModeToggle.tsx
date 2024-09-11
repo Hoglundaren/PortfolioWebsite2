@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const DarkModeToggle = () => {
+const DarkModeToggle = ({ isDarkModeProp }: any) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     // Check local storage on component mount
@@ -20,9 +20,11 @@ const DarkModeToggle = () => {
         if (!isDarkMode) {
             document.documentElement.classList.add('dark');
             localStorage.setItem('theme', 'dark');
+            isDarkModeProp = true;
         } else {
             document.documentElement.classList.remove('dark');
             localStorage.setItem('theme', 'light');
+            isDarkModeProp = false;
         }
     };
 

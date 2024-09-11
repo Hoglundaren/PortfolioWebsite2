@@ -19,6 +19,7 @@ function About() {
           navigate with the arrows or <br />
           through the navbar to learn more about me!</p>
       </div >
+
     </>
   );
 }

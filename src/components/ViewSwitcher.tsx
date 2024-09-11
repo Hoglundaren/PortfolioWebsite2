@@ -2,12 +2,11 @@ import About from './About';
 import Skills from './Skills';
 import Contact from './Contact';
 import ProjectSlides from './ProjectSlides';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const ViewSwitcher = ({ view }: any) => {
-    const [isToggled, setIsToggled] = useState(false);
 
-    const knapp = document.getElementById("about")
+
     switch (view) {
         case 'about':
             return (
