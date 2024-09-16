@@ -1,5 +1,5 @@
-# Use the official Node.js image as the base image
-FROM node:16-alpine
+# Use the official Node.js image for ARM64 architecture
+FROM arm64v8/node:16-alpine
 
 # Set the working directory
 WORKDIR /app
