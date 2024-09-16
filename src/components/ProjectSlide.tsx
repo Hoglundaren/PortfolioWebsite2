@@ -5,13 +5,13 @@ import 'react-slideshow-image/dist/styles.css';
 type Props = { children: any }
 const settings = {
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2000,
-    transitionDuration: 500,
-    vertical: true
+    autoplaySpeed: 4000,
+    transitionDuration: 100,
+    vertical: true,
+    slidesToShow: 3,
+    cssEase: "linear"
 
 }
 
