@@ -1,5 +1,5 @@
 # Use the official Node.js image for ARM64 architecture
-FROM arm64v8/node:16-alpine
+FROM arm64v8/node:20.13.1
 
 # Set the working directory
 WORKDIR /app
@@ -13,11 +13,8 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Build the application
-RUN npm run build
-
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE 5173
 
 # Start the application
 CMD ["npm", "run", "dev"]
